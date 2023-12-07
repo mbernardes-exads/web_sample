@@ -31,8 +31,47 @@
       pn_soft_ask_description = "Would you like to receive great special offers &amp; promotions?";
       pn_soft_ask_yes = "ALLOW";
       pn_soft_ask_no = "NO, THANKS"; 
-  </script>
-  <script type="application/javascript" src="https://a.adnflow.com/pn.php"></script>
+    </script>
+    <script type="application/javascript" src="https://a.adnflow.com/pn.php"></script>
+
+
+    <!-- in-stream video ad -->
+    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+  
+    <video id="my-video" controls="" style="width: 640px; height: 360px;">
+        <source src="main_video.mp4" type="video/mp4">
+    </video>
+    
+    <script type="application/javascript">
+        var testVideo = fluidPlayer(
+            "my-video",
+            {
+                vastOptions: {
+                    "adList": [
+                        {
+                            "roll": "preRoll",
+                            "vastTag": "https://s.adnflow.com/splash.php?idzone=218"
+                        },
+                        {
+                            "roll": "midRoll",
+                            "vastTag": "https://s.adnflow.com/splash.php?idzone=218",
+                            "timer": 8
+                        },
+                        {
+                            "roll": "midRoll",
+                            "vastTag": "https://s.adnflow.com/splash.php?idzone=218",
+                            "timer": 10
+                        },
+                        {
+                            "roll": "postRoll",
+                            "vastTag": "https://s.adnflow.com/splash.php?idzone=218"
+                        }
+                ]
+            }
+    }
+        );
+    </script>
+
     
   </body>
 </html>
