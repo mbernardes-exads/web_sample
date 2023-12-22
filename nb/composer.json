@@ -1,7 +1,0 @@
-{
-  "name": "exads/exads-adblock",
-  "description": "Exads Neverblock Solution",
-  "require": {
-    "php": ">=5.2.0"
-  }
-}
