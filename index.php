@@ -1,4 +1,5 @@
 <?php
+//to try banner 300*250 type html on adnflow, targeting ZID 212
 $tag_tracker = isset($_GET['tag']) ? $_GET['tag'] : '';
 $click_url = isset($_GET['click_url']) ? $_GET['click_url'] : '';
 
