@@ -1,6 +1,7 @@
 <?php
 
-$ip_address = gethostbyname("https://mbernardes-exads.github.io/web_sample/");
+$ip_address = $_SERVER['SERVER_ADDR'];
+$ip_address2 = file_get_contents("http://ipecho.net/plain");
 
 ?>
 
@@ -12,7 +13,9 @@ $ip_address = gethostbyname("https://mbernardes-exads.github.io/web_sample/");
     website to make some tests<br /><br />
 
     ip:<?= $ip_address; ?>
-
+    <br />
+    ip2:<?= $ip_address2; ?>
+    <br />
 
     <script async type="application/javascript" src="https://a.adnflow.com/ad-provider.js"></script> 
  <ins class="easa8d6n9f72" data-zoneid="632"></ins> 
