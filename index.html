@@ -1,7 +1,10 @@
 <?php
 
 $ip_address = $_SERVER['SERVER_ADDR'];
+echo $ip_address;
+
 $ip_address2 = file_get_contents("http://ipecho.net/plain");
+echo $ip_address2;
 
 ?>
 
@@ -11,11 +14,6 @@ $ip_address2 = file_get_contents("http://ipecho.net/plain");
   </head>
   <body>
     website to make some tests<br /><br />
-
-    ip:<?= $ip_address; ?>
-    <br />
-    ip2:<?= $ip_address2; ?>
-    <br />
 
     <script async type="application/javascript" src="https://a.adnflow.com/ad-provider.js"></script> 
  <ins class="easa8d6n9f72" data-zoneid="632"></ins> 
