@@ -1,0 +1,11 @@
+<?php
+
+file_put_contents('info.txt', file_get_contents('php://input'));
+
+if(isset($_POST) && !empty($_POST))
+  file_put_contents('info_post.txt', $_POST);
+
+if(isset($_GET) && !empty($_GET))
+  file_put_contents('info_get.txt', $_GET);
+
+var_dump("executed");
